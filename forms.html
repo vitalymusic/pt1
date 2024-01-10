@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html">Lapa 1</a>
+        <a href="./lapa2.html">Lapa 2</a>
+        <a href="./forms.html">Lapa 3</a>
+    </nav>
+    <h1>HTML Formas</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Personīgā informācija:</legend>
+            <div class="formElement">
+                <label for="nameInput"><span>*</span>Jūsu vārds:</label>
+                <input type="text" name="name" id="nameInput" required>
+            </div>
+            <div class="formElement">
+                <label for="surnameInput"><span>*</span>Jūsu uzvārds:</label>
+                <input type="text" name="surname" id="surnameInput" required>
+            </div>
+            <div class="formElement">
+                <label for="mailInput"><span>*</span>Jūsu epasts:</label>
+                <input type="email" name="mailInput" id="mailInput" required>
+            </div>
+            <div class="formElement">
+                <label for="phoneInput"><span>*</span>Jūsu tālrunis:</label>
+                <input type="tel" name="phoneInput" id="phoneInput" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Izveidot paroli:</legend>
+            <div class="formElement">
+                <label for="passwordInput">Jaunā parole:</label>
+                <input type="password" name="password" id="passwordInput" pattern="[A-z]{8}" required>
+                <label for="passwordInput2">Jaunā parole vēlreiz:</label>
+                <input type="password" name="passwordRepeat" id="passwordInput2" pattern="[A-z]{8}" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Papildus dati:</legend>
+            <div class="formElement">
+                <label for="genderInput">Jūsu dzimums:</label>
+                <select name="gender" id="genderInput">
+                    <option value="virietis">Vīrietis</option>
+                    <option value="sieviete">Sieviete</option>
+                </select>
+            </div>
+            <div class="formElement">
+                <label for="birthDate">Jūsu dzimšanas datums:</label>
+                <input type="date" name="birthDate" id="birthDate">
+            </div>
+            <div class="formElement">
+                <label for="biography">Jūsu biogrāfija:</label>
+                <textarea name="biography" id="biography" cols="30" rows="10" maxlength="150"></textarea>
+            </div>
+            <div class="formElement">
+                <label for="profilePicture">Profila Bilde:</label>
+                <input type="file" name="profilePicture" id="profilePicture">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Profila iestatījumi:</legend>
+            <div class="formElement">
+                <input type="checkbox" name="activeProfile" id="activeProfile" value="true">
+                <label for="activeProfile">Aktīvs profils:</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Reģistrēties">
+    </form>
+</body>
+
+</html>

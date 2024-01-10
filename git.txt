@@ -1,0 +1,4 @@
+Git komandas
+
+git -v - pārbauda versiju
+

@@ -1,0 +1,81 @@
+/* selektors{
+    deklamācija 1;
+    deklamācija 2;
+    deklamācija 3;
+} */
+
+h1,h2,p{
+    color:#dafb07
+}
+
+
+h1.main_title{
+    color:red
+}
+
+
+input[type="text"],input{
+    background: rgb(230, 255, 3);
+}
+
+nav a{
+    color:green
+}
+
+
+table{
+    width: 300px;
+    border: 1px solid red;
+}
+
+table tr, table td{
+    border: 1px solid red;
+    height: 20pt;
+
+}
+
+table tr:nth-child(even){
+    background-color: aquamarine;
+}
+
+#phoneInput{
+    border: 3px solid rgb(0, 255, 136);
+    background-color: black;
+    color:white
+}
+
+/* 
+
+Teksta krāsa: color
+Fona krāsa: Background
+Apmale: Border: <biezums> <līnijas tips> <krāsa> 
+Platums: Width: <vērtība pikseļos vai procentos>
+augstums: Height: <vērtība pikseļos vai procentos>
+
+*/
+
+
+h3{
+    color:#e75208;
+    background-color: #0f006d; 
+    border: 1px dotted rgb(255, 0, 162);
+    width:200px;
+    height: 300px;
+}
+
+
+ol,ul{
+    color:#e75208;
+    background-color: #a2ffb5; 
+    border: 1px double rgb(255, 0, 162);
+}
+
+
+a{
+    color:red;
+}
+img{
+    border: 1px double rgb(255, 0, 162);
+    width:200px;
+}
+

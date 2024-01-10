@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); /* 3 kolonnas */
+          grid-gap: 10px; /* atstarpe starp kolonnām un rindām */
+        }
+        
+        .gallery img {
+          width: 100%; /* bilder attiecīgā platuma procentos */
+          height: auto; /* saglabāt proporcijas */
+        }
+        
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="gallery">
+      <img src="bildes/bilde1.jpg" alt="Bilde 1">
+      <img src="bildes/bilde2.jpg" alt="Bilde 2">
+      <img src="bildes/bilde3.jpg" alt="Bilde 3">
+      <!-- Citas bildes... -->
+    </div>
+    
+    <script>
+        const images = document.querySelectorAll('.gallery img');
+        
+        images.forEach(image => {
+          image.addEventListener('click', () => {
+            image.classList.toggle('active');
+          });
+        });
+        
+    </script>
+</body>
+</html>
