@@ -35,6 +35,55 @@
                 padding:0px;
                 margin-top: 10px;
             }
+
+            /* body{
+                width: 50%;
+                margin: auto;
+            }
+            html{
+                background-color: black;
+                color:white
+            } */
+
+
+
+
+
+            /* Bloka elementu sakārtošana */
+
+
+            div.container{
+                height: 400px;
+                max-width: 100%;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                justify-content: flex-start;
+                justify-content: flex-end;
+                justify-content: space-around;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+
+            }
+
+            .item{
+                /* margin:auto; */
+                
+                margin: 0px;
+                width: 175px;
+                height: 40px;
+            }
+            .item:first-child{
+                align-self: baseline;
+            }
+
+
+            h1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
     </style>
 </head>
 <body>
@@ -42,8 +91,15 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio, laborum omnis impedit nostrum mollitia vero esse, repudiandae quod tempora laudantium eum, odio tenetur ut! Officiis iste odit illum fugit.</p>
 
 
-    <div>
-
+    <div class="container">
+        <p class="item">1</p>
+        <p class="item">2</p>
+        <p class="item">3</p>
+        <p class="item">4</p>
+        <p class="item">5</p>
+        <p class="item">6</p>
+        <p class="item">7</p>
+        <p class="item">8</p>
     </div>
 
     <header>
