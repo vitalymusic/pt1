@@ -9,10 +9,15 @@
         .container{
             display: grid;
             height: 100vh;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 300px auto;
+            gap:10px;
+
         }
 
         .item{
-            border: 2px solid red;
+            /* border: 2px solid red; */
+            background-color: aliceblue;
         }
     </style>
 </head>
@@ -20,6 +25,7 @@
     <h1>CSS GRID</h1>
 
     <div class="container">
+        <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
