@@ -10,7 +10,7 @@ h1,h2,p{
 
 
 h1.main_title{
-    color:red
+    color:red;
 }
 
 
@@ -78,4 +78,11 @@ img{
     border: 1px double rgb(255, 0, 162);
     width:200px;
 }
+
+
+
+/* Bloka elementi */
+
+/* Izmēru iestatīšana */
+
 
