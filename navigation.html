@@ -18,17 +18,31 @@
             align-items: center;
         }
 
-        nav a{
+        nav > a{
             /* margin: 0px 20px; */
             display: block;
             padding: 5px 20px;
             text-decoration: none;
-            color:black;
-            border-right: 1px solid rgba(0, 0, 0, 0.144)
+            color:rgba(0, 0, 0, 0.168);
+            border-right: 1px solid rgba(0, 0, 0, 0.144);
+            transition: all .15s ease-in;
         }
 
         nav a:last-child{
             border-right: none;
+        }
+
+        nav a:hover{
+            color:black;
+            font-size: 25px;
+            transition: all .3s ease-in;
+        }
+
+        .submenu{
+            
+        }
+        .submenu a{
+
         }
     </style>
 </head>
@@ -40,7 +54,15 @@
         <a href="#">Saite 3</a>
         <a href="#">Saite 3</a>
         <a href="#">Saite 3</a>
-        <a href="#">Saite 3</a>
+        <a href="#" class="submenu_link">Menu
+            <div class="submenu">
+                <a href="">Submenu Item</a>
+                <a href="">Submenu Item</a>
+                <a href="">Submenu Item</a>
+                <a href="">Submenu Item</a>
+            </div>
+
+        </a>
     </nav>
 </body>
 </html>
