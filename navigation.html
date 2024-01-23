@@ -18,7 +18,7 @@
             align-items: center;
         }
 
-        nav > a{
+        nav > a, .submenu > a, .submenu_link{
             /* margin: 0px 20px; */
             display: block;
             padding: 5px 20px;
@@ -39,11 +39,24 @@
         }
 
         .submenu{
-            
-        }
-        .submenu a{
+            display: none;
+            flex-direction: column;
+            padding: 10px;
+            background-color: beige;
+            position:absolute;
+            top:80px;
+            right:22%;
+            outline:2px solid red;
 
         }
+        .submenu > a{
+            border-right: none;
+        }
+
+
+        .submenu_link:hover .submenu{
+            display:block;
+        } 
     </style>
 </head>
 <body>
@@ -54,15 +67,14 @@
         <a href="#">Saite 3</a>
         <a href="#">Saite 3</a>
         <a href="#">Saite 3</a>
-        <a href="#" class="submenu_link">Menu
+        <div href="#" class="submenu_link">Menu
             <div class="submenu">
                 <a href="">Submenu Item</a>
                 <a href="">Submenu Item</a>
                 <a href="">Submenu Item</a>
                 <a href="">Submenu Item</a>
             </div>
-
-        </a>
+        </div>
     </nav>
 </body>
 </html>
