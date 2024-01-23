@@ -27,12 +27,17 @@
             border-right: 1px solid rgba(0, 0, 0, 0.144);
             transition: all .15s ease-in;
         }
+        .submenu_link{
+            border-right: none;
+            width:194px;
+
+        }
 
         nav a:last-child{
             border-right: none;
         }
 
-        nav a:hover{
+        nav > a:hover{
             color:black;
             font-size: 25px;
             transition: all .3s ease-in;
@@ -43,17 +48,28 @@
             flex-direction: column;
             padding: 10px;
             background-color: beige;
-            position:absolute;
+            /* position:relative;
             top:80px;
-            right:22%;
-            outline:2px solid red;
+            right:22%; */
+            /* outline:2px solid red; */
 
         }
         .submenu > a{
             border-right: none;
         }
+        div.submenu_link{
+            cursor: pointer;
+        }
 
+        div.submenu_link:hover{
+            /* color:black;
+            font-size: 25px;
+            transition: all .3s ease-in; */
+            position:relative;
+            top:69px;
 
+            /* align-self:self-start; */
+        }
         .submenu_link:hover .submenu{
             display:block;
         } 
@@ -67,7 +83,8 @@
         <a href="#">Saite 3</a>
         <a href="#">Saite 3</a>
         <a href="#">Saite 3</a>
-        <div href="#" class="submenu_link">Menu
+        <div href="#" class="submenu_link">
+            <a href="">Menu</a>
             <div class="submenu">
                 <a href="">Submenu Item</a>
                 <a href="">Submenu Item</a>
