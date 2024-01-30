@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: bisque;
+            font-size: 14pt;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+
+        @media screen and (min-width:400px) and (max-width:800px) {
+            body {
+                background-color: rgb(7, 165, 7);
+                font-size: 10pt;
+            }
+
+
+          
+        }
+
+
+        @media screen and (max-width:399px){
+
+
+            /* paslēpt tekstu */
+
+            p{
+                display: none;
+            }
+        }
+        @media screen and (orientation:portrait) {
+            body {
+                background-color: rgb(192, 230, 6);
+                
+            }
+        }
+
+        @media screen and (orientation:landscape) {
+            body {
+                background-color: rgb(229, 7, 155);
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Media vaicājumi</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nesciunt quas nam sequi laborum iusto. Vel
+        totam, quis quo laudantium numquam hic corrupti possimus fugit doloremque modi inventore ipsum perspiciatis!</p>
+
+
+
+</body>
+
+</html>
