@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Pug Document
+        script(src="https://cdn.tailwindcss.com")
+        link(rel="stylesheet", href="../style/main.min.css") 
+    body 
+        include components/__nav.pug
+        h1 Šī lapa ir veidota ar PUG 
+        h2 Mācos izmantot pug
+        .container 
+            h3.font-extrabold.bg-red-300 testējam kompilātoru
+            h5 #{title}
+            form(action="")
+               <select>
+                - var n = 1984;
+                    while n<2024
+                        option= n++ 
+                </select>  
+        div 
+            +titles
+            +titles
+            +titles
+            +titles
+            +titles
+                

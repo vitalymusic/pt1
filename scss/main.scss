@@ -1,0 +1,33 @@
+@use "_mobile.scss";
+
+
+
+$base_color:#c3fb5c;
+
+@mixin atkapes{
+    padding: 10px;
+    margin: 10px auto;
+}
+
+
+body{
+    background-color: antiquewhite;
+    font-size: 14pt;
+}
+
+nav{
+    @include atkapes();
+    display: flex;
+    justify-content: space-around;
+    background-color: $base_color;
+    a{
+        display: block;
+
+    }
+
+}
+
+h1{
+    @include atkapes();
+}
+
