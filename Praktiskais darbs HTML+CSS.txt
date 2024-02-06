@@ -1,0 +1,26 @@
+Tēma - Vizītkartes vai portfolio lapa (viena dokumenta vai vairākiem dokumentiem)
+<a href="doc1.html">
+<a href="#sec1">
+
+
+HTML:
+1. Jāizmanto semantiskie tagi 
+2. Jāizmanto Visraksti, rindkopas, attēli, hipersaites, saraksti (tabula ja nepieciešams)
+3. Izveidot kontaktu sadaļu ar formu
+4. Japadomā par bloku elementu sakārtošanu/sadalīšanu
+5. sakārtot kodu, atkāpes  Format document
+
+
+CSS:
+Izmēru atkāpju, teksta izmēra iestatīšana, apmales
+Flexbox, grid pielietošana
+Fona attēlu vai gradientu pielietošana
+Google fonti, Ikonas
+Animācijas un transformācijas
+
+
+
+Piemērs: http://vkorabelnikovs.infinityfreeapp.com/
+
+Darbu janopublicē hostingā lai mēs varam pēdējā nodarbībā to visi atvērt 
+
